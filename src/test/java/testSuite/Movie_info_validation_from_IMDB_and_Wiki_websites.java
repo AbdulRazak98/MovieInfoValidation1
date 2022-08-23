@@ -64,8 +64,10 @@ public class Movie_info_validation_from_IMDB_and_Wiki_websites extends Base {
 		Wikipage().goTo_Wiki_Search().sendKeys(Movie_Name);
 		Wikipage().goTo_Wiki_Search().sendKeys(Keys.ENTER);
 		log.info("Entered a movie name in Wiki-Search text and clicked on Enter");
+		if(Wikipage().goTo_Searched_Movie_In_Wiki().isDisplayed()) {
 		Wikipage().goTo_Searched_Movie_In_Wiki().click();
 		log.info("navigated and clicked on the first movie displayed in the search results");
+		}
 
 		perform_Action().moveToElement(Wikipage().goTo_Country_Text()).perform();
 		String countrynName_In_Wiki = Wikipage().goTo_Countryname_Of_Searched_Movie_In_Wiki_Portal().getText();

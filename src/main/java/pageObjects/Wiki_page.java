@@ -19,7 +19,7 @@ public class Wiki_page {
 	@FindBy(css = "[name='search']")
 	WebElement search;
 
-	@FindBy(css = "ul[class='mw-search-results'] li div a")
+	@FindBy(xpath = "//ul[@class='mw-search-results']/li/div/a")
 	WebElement first_movie_displayed;
 
 	@FindBy(xpath = "//th[text()='Country']")

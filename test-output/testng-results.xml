@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-23T20:45:31 IST" name="Default suite" finished-at="2022-08-23T20:45:51 IST" duration-ms="19741">
+  <suite started-at="2022-08-23T21:08:56 IST" name="Default suite" finished-at="2022-08-23T21:09:19 IST" duration-ms="23420">
     <groups>
     </groups>
-    <test started-at="2022-08-23T20:45:31 IST" name="Default test" finished-at="2022-08-23T20:45:51 IST" duration-ms="19741">
+    <test started-at="2022-08-23T21:08:56 IST" name="Default test" finished-at="2022-08-23T21:09:19 IST" duration-ms="23420">
       <class name="testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites">
-        <test-method is-config="true" signature="initialize_driver()[pri:0, instance:testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites@49964d75]" started-at="2022-08-23T20:45:31 IST" name="initialize_driver" finished-at="2022-08-23T20:45:33 IST" duration-ms="2025" status="PASS">
+        <test-method is-config="true" signature="initialize_driver()[pri:0, instance:testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites@49964d75]" started-at="2022-08-23T21:08:56 IST" name="initialize_driver" finished-at="2022-08-23T21:08:58 IST" duration-ms="2423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize_driver -->
-        <test-method signature="IMDB_and_Wiki_Page_Navigation()[pri:0, instance:testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites@49964d75]" started-at="2022-08-23T20:45:33 IST" name="IMDB_and_Wiki_Page_Navigation" finished-at="2022-08-23T20:45:50 IST" duration-ms="17429" status="FAIL">
+        <test-method signature="IMDB_and_Wiki_Page_Navigation()[pri:0, instance:testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites@49964d75]" started-at="2022-08-23T21:08:58 IST" name="IMDB_and_Wiki_Page_Navigation" finished-at="2022-08-23T21:09:19 IST" duration-ms="20692" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -55,7 +55,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IMDB_and_Wiki_Page_Navigation -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites@49964d75]" started-at="2022-08-23T20:45:50 IST" name="teardown" finished-at="2022-08-23T20:45:51 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites@49964d75]" started-at="2022-08-23T21:09:19 IST" name="teardown" finished-at="2022-08-23T21:09:19 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

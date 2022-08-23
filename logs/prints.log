@@ -1,4 +1,0 @@
-17:15:14.399 [main] INFO  resources.Base - Grabbed Release Date of searched movie from Wiki portal
-17:15:14.400 [main] INFO  resources.Base - Release Date in Wiki : 14 April 2022
-17:15:14.400 [main] INFO  resources.Base - Country names in both portals matched
-17:15:14.400 [main] ERROR resources.Base - Release Dates in both portals did not match

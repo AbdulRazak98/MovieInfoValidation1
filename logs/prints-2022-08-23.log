@@ -1,12 +1,11 @@
-15:13:16.692 [main] INFO  resources.Base - Driver is initialized
-15:13:20.939 [main] INFO  resources.Base - Launched IMDB url
-15:13:25.399 [main] INFO  resources.Base - Entered movie name in IMDB Search text and clicked on Enter
-15:13:28.173 [main] INFO  resources.Base - navigated and clicked on the first movie displayed in the search results
-15:13:28.374 [main] INFO  resources.Base - Grabbed Country name of searched movie from IMDB portal
-15:13:28.374 [main] INFO  resources.Base - Country name in IMDB : India
-15:13:28.404 [main] INFO  resources.Base - Grabbed Release Date of searched movie from IMDB portal
-15:13:28.404 [main] INFO  resources.Base - Release Date in IMDB : 13 April 2022
-15:13:29.298 [main] INFO  resources.Base - Launched Wiki url
-15:13:31.415 [main] INFO  resources.Base - Entered movie name in Wiki Search text and clicked on Enter
-15:13:32.054 [main] INFO  resources.Base - navigated and clicked on the first movie displayed in the search results
-15:13:32.303 [main] INFO  resources.Base - Grabbed Country name of searched movie from Wiki portal
+17:15:06.897 [main] INFO  resources.Base - Entered  a movie name in the IMDB-Search text and clicked on Enter
+17:15:10.148 [main] INFO  resources.Base - navigated and clicked on the first movie displayed in the search results
+17:15:10.356 [main] INFO  resources.Base - Grabbed Country name of searched movie from IMDB portal
+17:15:10.356 [main] INFO  resources.Base - Country name in IMDB : India
+17:15:10.412 [main] INFO  resources.Base - Grabbed Release Date of searched movie from IMDB portal
+17:15:10.412 [main] INFO  resources.Base - Release Date in IMDB : 13 April 2022
+17:15:11.324 [main] INFO  resources.Base - Launched Wiki url
+17:15:13.447 [main] INFO  resources.Base - Entered a movie name in Wiki-Search text and clicked on Enter
+17:15:14.115 [main] INFO  resources.Base - navigated and clicked on the first movie displayed in the search results
+17:15:14.360 [main] INFO  resources.Base - Grabbed Country name of searched movie from Wiki portal
+17:15:14.360 [main] INFO  resources.Base - Country name in Wiki  : India

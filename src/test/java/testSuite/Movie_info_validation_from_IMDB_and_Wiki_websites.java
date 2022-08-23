@@ -32,18 +32,18 @@ public class Movie_info_validation_from_IMDB_and_Wiki_websites extends Base {
 
 	public void IMDB_and_Wiki_Page_Navigation() throws IOException {
 
-		String IMDB_url = getValueOf ("IMDB_url");
+		String IMDB_url = getValueOf("IMDB_url");
 		launch_Url(IMDB_url);
 		log.info("Launched IMDB url");
 		perform_Action().moveToElement(IMDBpage().goTo_Sidescreen()).perform();
-		
+
 		String Movie_Name = getValueOf("Movie_Name");
 		IMDBpage().goTo_IMDB_Search().sendKeys(Movie_Name);
 		IMDBpage().goTo_IMDB_Search().sendKeys(Keys.ENTER);
 		log.info("Entered  a movie name in the IMDB-Search text and clicked on Enter");
 		IMDBpage().goTo_Searched_Movie_In_IMDB().click();
 		log.info("navigated and clicked on the first movie displayed in the search results");
-		
+
 		perform_Action().moveToElement(IMDBpage().goTo_CountryOfOrigin_Text()).perform();
 
 		String countryName_In_IMDB = IMDBpage().goTo_Countryname_Of_Searched_Movie_In_IMDB_Portal().getText();
@@ -66,7 +66,7 @@ public class Movie_info_validation_from_IMDB_and_Wiki_websites extends Base {
 		log.info("Entered a movie name in Wiki-Search text and clicked on Enter");
 		Wikipage().goTo_Searched_Movie_In_Wiki().click();
 		log.info("navigated and clicked on the first movie displayed in the search results");
-		
+
 		perform_Action().moveToElement(Wikipage().goTo_Country_Text()).perform();
 		String countrynName_In_Wiki = Wikipage().goTo_Countryname_Of_Searched_Movie_In_Wiki_Portal().getText();
 		log.info("Grabbed Country name of searched movie from Wiki portal");
@@ -76,30 +76,25 @@ public class Movie_info_validation_from_IMDB_and_Wiki_websites extends Base {
 		log.info("Grabbed Release Date of searched movie from Wiki portal");
 		System.out.println("Release Date in Wiki : " + releaseDate_In_Wiki);
 		log.info("Release Date in Wiki : " + releaseDate_In_Wiki);
-		
-		if(countryName_In_IMDB.equalsIgnoreCase(countrynName_In_Wiki) )
-			
+
+		if (countryName_In_IMDB.equalsIgnoreCase(countrynName_In_Wiki))
+
 		{
-			
+
 			log.info("Country names in both portals matched");
+		} else {
+			log.error("Country names in both portals did not match");
 		}
-		else {
-			log.info("Country names in both portals did not match");
-		}
-		
-        if(releaseDate_In_IMDB.equalsIgnoreCase(releaseDate_In_Wiki) )
-			
+
+		if (releaseDate_In_IMDB.equalsIgnoreCase(releaseDate_In_Wiki))
+
 		{
-			
-			log.error("Release Dates in both portals matched");
-		}
-		else {
+
+			log.info("Release Dates in both portals matched");
+		} else {
 			log.error("Release Dates in both portals did not match");
 		}
-		
-		
-		
-		
+
 		Assert.assertTrue(countryName_In_IMDB.equalsIgnoreCase(countrynName_In_Wiki));
 		Assert.assertTrue(releaseDate_In_IMDB.equalsIgnoreCase(releaseDate_In_Wiki));
 

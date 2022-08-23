@@ -20,9 +20,7 @@ public class Base {
 
 	public WebDriver initializeDriver() throws IOException {
 
-		// place the chrome driver in u r project so dt tmrw when u deploy the project
-		// in other machine then user need not download chrome driver seperatley chrome
-		// driver is also downloaded automatically
+		
 
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "\\Utils\\chromedriver_win32\\chromedriver.exe");

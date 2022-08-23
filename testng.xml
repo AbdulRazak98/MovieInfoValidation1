@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testSuite.Movie_info_validation_from_IMDB_and_Wiki_websites"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

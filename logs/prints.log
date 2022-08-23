@@ -1,0 +1,5 @@
+15:13:32.303 [main] INFO  resources.Base - Country name in Wiki  : India
+15:13:32.356 [main] INFO  resources.Base - Grabbed Release Date of searched movie from Wiki portal
+15:13:32.356 [main] INFO  resources.Base - Release Date in Wiki : 14 April 2022
+15:13:32.356 [main] INFO  resources.Base - Country names in both portals matched
+15:13:32.357 [main] ERROR resources.Base - Release Dates in both portals did not match
